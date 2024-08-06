@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "description": "A backend for online education tracking, both the development thereof and production environments.",
   "license": "Apache-2.0",
-  "main": "app.mjs",
+  "main": "index.js",
   "type": "module",
   "scripts": {
+    "preinstall": "git config core.hooksPath .githooks"
   },
   "directories": {
     "test": "test"
   },
   "engines": {
-    "node": "^16"
+    "node": "^20",
+    "npm": "^9"
   },
   "author": {
     "name": "Anthony Jackman",
@@ -29,6 +31,7 @@
     "fastify",
     "api",
     "database",
+    "mongodb",
     "training"
   ]
 }
